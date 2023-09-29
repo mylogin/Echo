@@ -94,8 +94,8 @@ std::string to_str(const T& p) {
     for (const auto &x : p) {
         if (!first) {
             res += delimiter;
-            first = false;
         }
+        first = false;
         res += to_str(x);
     }
     res += cont_quotes[1];
